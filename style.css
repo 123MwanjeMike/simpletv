@@ -1,0 +1,15 @@
+#tv{
+    height: 300px;
+    width:  600px;
+    background-color: black;
+    margin: 0 auto;
+    color: burlywood;
+    border: 2px green solid;
+}
+button{
+    border-top: 2px red solid;
+    margin-left: 280px;
+    margin-top: 220px;
+    background-color: chocolate;
+    height: 10px;
+}
