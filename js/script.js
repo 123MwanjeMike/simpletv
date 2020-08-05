@@ -3,19 +3,12 @@ new Vue({
     data() {
         return {
             signal: false,
-            items: ['item1', 'item2', 'item3', 'item4',],
-            item: undefined,
-            message: "The bulb is on"
+            state: ['Off', 'On']
         }
     },
     methods: {
         toggle: function () {
             this.signal = !this.signal;
-        },
-        addItem: function () {
-            if (this.item !== undefined) {
-                this.items.push(this.item)
-            }
         }
     }
 });

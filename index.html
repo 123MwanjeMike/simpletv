@@ -12,7 +12,8 @@
                 <h1 v-if="signal" v-bind:title="message">On</h1>
                 <h1 v-else>Off</h1>
             </div>
-            <button v-on:click="toggle">Switch</button>
+            <button v-if="signal" v-on:click="toggle" >{{state[0]}}</button>
+            <button v-else v-on:click="toggle" >{{state[1]}}</button>
         </div>
 
         <script src="/js/vue.js"></script>
