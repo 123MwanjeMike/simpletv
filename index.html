@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Simple TV</title>
+    </head>
+    <body>
+
+        <div id="tv">
+            <div v-bind:class="state">
+
+            </div>
+            <button v-if="signal" v-on:click="toggle" >{{state[0]}}</button>
+            <button v-else v-on:click="toggle" >{{state[1]}}</button>
+            <div class="controls">
+            <div v-if="!signal" class="on"></div>
+            <div v-if="signal" class="off"></div>
+            <!-- <div class="controls">
+                <h1 v-if="signal" v-bind:title="message">On</h1>
+                <h1 v-else>Off</h1>
+            </div> -->
+
+            <button v-if="signal" v-on:click="toggle">{{state[0]}}</button>
+            <button v-else v-on:click="toggle">{{state[1]}}</button>
+        </div>
+
+        <script src="/js/vue.js"></script>
+        <script src="/js/script.js"></script>
+    </body>
+</html>
