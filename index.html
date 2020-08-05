@@ -9,13 +9,12 @@
     <body>
 
         <div id="tv">
-            <div v-bind:class="state">
-
-            </div>
-            <div class="controls">
+            <div v-if="!signal" class="on"></div>
+            <div v-if="signal" class="off"></div>
+            <!-- <div class="controls">
                 <h1 v-if="signal" v-bind:title="message">On</h1>
                 <h1 v-else>Off</h1>
-            </div>
+            </div> -->
 
             <button v-if="signal" v-on:click="toggle">{{state[0]}}</button>
             <button v-else v-on:click="toggle">{{state[1]}}</button>

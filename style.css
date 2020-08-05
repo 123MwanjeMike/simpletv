@@ -9,10 +9,10 @@
 .off{
     height: 300px;
     width:  600px;
-    background-color: rgb(243, 241, 241);
+    background-image: url(/watch.jpeg);
     margin: 0 auto;
     color: burlywood;
-    border: 2px green solid;
+    border: solid 5px green solid;
 }
 button{
     border-top: 2px red solid;
