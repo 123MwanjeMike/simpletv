@@ -3,16 +3,23 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
         <title>Simple TV</title>
     </head>
     <body>
 
         <div id="tv">
             <div>
-                <h1 v-if="signal" v-bind:title="message">On</h1>
-                <h1 v-else>Off</h1>
+                <div id="screen">
+
+                </div>
+                <div class="controls">
+                    <h1 v-if="signal" v-bind:title="message">On</h1>
+                    <h1 v-else>Off</h1>
+                </div>
+                
             </div>
-            <button v-on:click="toggle">Switch</button>
+            <button v-on:click="toggle">...</button>
         </div>
 
         <script src="/js/vue.js"></script>
