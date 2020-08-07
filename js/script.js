@@ -3,7 +3,7 @@ new Vue({
     data() {
         return {
             signal: false,
-            state: ['Off', 'On']
+            state: ['OFF', 'ON']
         }
     },
     methods: {

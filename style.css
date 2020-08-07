@@ -1,24 +1,28 @@
-.on{
-    height: 300px;
-    width:  600px;
+.off {
+    height: 80vh;
+    width: 70%;
     background-color: black;
-    margin: 0 auto;
-    color: burlywood;
-    border: 2px green solid;
+    border: 12px rgb(59, 63, 71) solid;
+    margin: auto;
 }
-.off{
-    height: 300px;
-    width:  600px;
-    background-image: url(/watch.jpeg);
+
+.on {
+    height: 80vh;
+    width: 70%;
+    background-image: url(/display.gif);
     background-size: cover;
-    margin: 0 auto;
-    color: burlywood;
-    border: solid 5px green solid;
+    border: 12px rgb(59, 63, 71) solid;
+    margin: auto;
 }
-button{
-    border-top: 2px red solid;
-    margin-left: 400px;
-    margin-top: 220px;
-    background-color: chocolate;
-    height: 20px;
+
+button {
+    margin-left: 80%;
+}
+
+#on {
+    background-color: red;
+}
+
+#off {
+    background-color: green;
 }
